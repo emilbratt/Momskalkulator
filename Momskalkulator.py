@@ -19,7 +19,8 @@ if brukerValg == 1:
     print('Skriv inn summen du skal regne ut momsen for.')
     brukerSum = int(input())
     svarMoms = momsUtenTotal(brukerProsent, brukerSum)
-    print('Av ' + str(brukerSum) + 'kr blir momsen ' + str(float("{:.2f}".format(svarMoms)))\
+    print('Av ' + str(brukerSum) + 'kr blir momsen ' +\
+ str(float("{:.2f}".format(svarMoms)))\
  + 'kr.')
     totalSum = brukerSum + svarMoms
     print('Totalsummen blir ' + str(totalSum) + 'kr.')
@@ -33,6 +34,6 @@ elif brukerValg == 2:
     print('Av totalsum på ' + str(brukerSum) +  'kr, utgjør momsen '\
  + str(float("{:.2f}".format(svarMoms))) + 'kr.')
     sumUtenMoms = brukerSum - svarMoms
-    print('Sum eks. moms blir da ' + str(sumUtenMoms) + 'kr.')
+    print('Sum eks. moms blir ' + str(sumUtenMoms) + 'kr.')
 else:
     print('Du har ikke valgt 1 eller 2.')
